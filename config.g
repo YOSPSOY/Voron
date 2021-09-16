@@ -91,7 +91,7 @@ M307 H0 B1 S0.6                                             ; Enable Bang Bang m
 
 ; Hotend heater
 ;M308 S1 A"Hotend" P"spi.cs2" Y"rtd-max31865" F60 					 ; Hotend is 2-wire PT100 on second channel, 60Hz mains
-M308 S1 P"e0temp" Y"thermistor" T100000 B4725 C7.060000e-8 A"Hotend" ; configure sensor 1 as thermistor (ATC Semitec 104GT2)
+M308 S1 P"e0temp" Y"thermistor" T100000 B4267 C7.060000e-8 A"Hotend" ; configure sensor 1 as thermistor (ATC Semitec 104GT2)
 M950 H1 C"e0heat" T1
 M307 H1 B0 S1.00                                ; disable bang-bang mode for heater and set PWM limit
 M143 H1 S300                                    ; Set temperature limit for heater 1 to 300C
